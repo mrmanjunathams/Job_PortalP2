@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Add skills</title>
+
+
+	    <!-- Compiled and minified CSS -->
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+
+	    <!-- Compiled and minified JavaScript -->
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+
+    <link rel="stylesheet" href="addjob.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+
+<script src="js/app.js"></script>
+  </head>
+  <body id="body" ng-app="myApp">
+
+
+    <div class="row">
+    <div class="card-panel">
+    <div id="heading">
+    <p id="hed"><b>ADD JOBS</b></p>
+    </div>
+<form class="col s12" ng-controller="AddjobsController">
+           <div class="row">
+		           <div class="input-field col s6">
+		             <input id="domain" type="text" class="validate" ng-model="domain">
+		             <label for="domain" style="font-size:1.5rem;">Domain</label>
+		           </div>
+		           </div>
+
+         <div class="row">
+
+           <div class="input-field col s6">
+             <input id="designation" type="text" class="validate" ng-model="designation">
+             <label for="designation" style="font-size:1.5rem;">Designation</label>
+           </div>
+           </div>
+		<div class="row">
+		           <div class="input-field col s6">
+		             <input id="skills_required" type="text" class="validate" ng-model="skills_required">
+		             <label for="skills_required" style="font-size:1.5rem;">Skills Required</label>
+		           </div>
+		           </div>
+		           <div class="row">
+				   		           <div class="input-field col s6">
+				   		             <input id="place" type="text" class="validate" ng-model="place">
+				   		             <label for="place" style="font-size:1.5rem;">place</label>
+				   		           </div>
+		           </div>
+		           <div class="row">
+				   		           <div class="input-field col s6">
+				   		             <textarea id="description" type="text" class="validate" ng-model="description"></textarea>
+				   		             <label for="description" style="font-size:1.5rem;">Description about job</label>
+				   		           </div>
+		           </div>
+		 <div class="row">
+		            <div class="input-field col s6">
+		              <input id="salary" type="text" class="validate" ng-model="salary">
+		              <label for="salary" style="font-size:1.5rem;">Salary</label>
+		            </div>
+		            </div>
+
+		<div class="row">
+				           <div class="input-field col s6">
+				             <input id="date" type="text" class="validate" ng-model="date">
+				             <label for="date" style="font-size:1.5rem;">Date</label>
+				           </div>
+				           </div>
+	 <div class="row">
+		   <div class="input-field col s6">
+		 <input id="time" type="text" class="validate" ng-model="time">
+		<label for="time" style="font-size:1.5rem;">Time</label>
+		</div>
+		</div>
+      <input class="btn waves-effect waves-light black"  type="submit" ng-click="submit1()" value="POST JOB">
+		</form>
+
+
+
+      <div>
+  </div>
+
+  </body>
+  </html>

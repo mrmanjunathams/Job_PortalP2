@@ -1,0 +1,53 @@
+#card1{
+  width:25%;
+  height:auto;
+  margin-left: 4%;
+  margin-top:2%;
+
+
+}
+
+button{
+  width:70%;
+  margin-top:2rem;
+
+
+}
+
+#heading {
+  font-size: 150%;
+  text-align: center;
+  color: black;
+  padding-top: -1%;
+}
+body{
+  background: whitesmoke;
+}
+#card2{
+  background:white;
+
+  margin-left:33rem;
+  width:55%;
+  margin-top:-24rem;
+  height:30rem;
+
+}
+.tabs{
+  width:100%;
+  margin:0;
+  background:black;
+
+
+}
+.btn-floating{
+  margin-bottom:-2rem;
+}
+.card2 .button{
+  margin-left:10rem;
+
+  float:right;
+
+}
+.tab b{
+  color: white;
+}

@@ -1,0 +1,123 @@
+
+	      <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+		           <link rel="stylesheet" href="complete.css">
+		           <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/components/button.min.css">
+		           <link rel = "stylesheet" href = "https://fonts.googleapis.com/icon?family=Material+Icons">
+		           <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+		           <script type = "text/javascript" src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>
+		           <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
+		           <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+		           <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+		             <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+<!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+
+    <script src="js/app.js"></script>
+
+<body ng-app="myApp">
+    <div class="row" >
+      <div class="card-panel" style="margin:auto;height:63rem;backround:white;" ng-app="myApp">
+       <p id="hed"><b>Complete to Continue....</b></p>
+	     <form class="col s12" method="post" ng-controller="EmployeeController">
+	       <div class="row">
+	         <div class="input-field col s6">
+			   <input id="firstname" type="text" class="validate"  ng-model="firstname">
+			   <label for="firstname" style="font-size:1rem;">First Name</label>
+             </div>
+	         <div class="input-field col s6">
+	           <input id="lastname" type="text" class="validate" ng-model="lastname">
+	           <label for="lastname"  style="font-size:1rem;">Last Name</label>
+	         </div>
+	       </div>
+	       <div class="row">
+	       <h6>Select your Gender</h6>
+	         <div class="input-field col s6" ng-model="gender">
+	           <p>
+		         <label id="male">
+		           <input  id="male" name="group1" type="radio"   >
+		           <span id="male">Male</span>
+		         </label>
+		       </p>
+		       </div>
+				 <div class="input-field col s6">
+		        <p>
+		         <label id="male">
+		           <input id="female" name="group1" type="radio">
+		           <span id="male">Female</span>
+		         </label>
+                </p>
+              </div>
+			</div>
+	       <div class="row">
+	        <div class="input-field col s12">
+		   	 <input id="Current_Position" type="text" class="validate" ng-model="Current_Position">
+		     <label for="Current_Position" style="font-size:1rem;">Current Position</label>
+		    </div>
+		   </div>
+		   <div class="row">
+		    <div class="input-field col s6">
+		   	  <input id="years_of_experience" type="text" class="validate" ng-model="years_of_experience">
+		   	  <label for="years_of_experience" style="font-size:1rem;">Years Of Experience</label>
+		   	</div>
+		   	<div class="input-field col s6">
+		   	 <input id="contact" type="text" class="validate" ng-model="contact">
+		   	 <label for="contact" style="font-size:1rem;">Contact</label>
+		   	</div>
+		   </div>
+		   <div class="row">
+		      <div class="input-field col s12">
+		         <textarea id="address" class="validate" ng-model="address"></textarea>
+		          <label for="address" style="font-size:1rem;">Address</label>
+		      </div>
+           </div>
+           <div class="row">
+		      <div class="input-field col s12">
+		     <input  id="date" type="text" class="datepicker" ng-model="date">
+		     <label for="DOB" style="font-size:1rem;">Select your DOB</label>
+		     </div>
+           </div>
+
+					 <div class="row">
+		      <div class="input-field col s12">
+		     <input  id="email" type="text" ng-model="email">
+		     <label for="email" style="font-size:1rem;">Email</label>
+		     </div>
+           </div>
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+ <script>
+ const Calender=document.querySelector('.datepicker');
+ M.Datepicker.init(Calender,{
+ format:'dd/mmmm/yyyy',
+ showClearBtn:true,
+ i18n:{clear:'remove',
+ done:'Yes',
+ cancel:'No'
+ }
+ });
+
+ </script>
+           <div class="file-field input-field">
+		      <div class="btn" id="filebtn">
+		         <span>File</span>
+		         <input type="file">
+		       </div>
+		       <div class="file-path-wrapper">
+		         <input class="file-path validate" type="text">
+		       </div>
+           </div>
+					 <input class="btn waves-effect waves-light black"  type="submit" ng-click="submit()" value="submit">
+			  		&nbsp&nbsp&nbsp&nbsp&nbsp
+					 <button class="btn waves-effect waves-light black" type="cancel" name="action">Cancle</button>
+		 </form>
+
+	</div>
+</div>
+</body>

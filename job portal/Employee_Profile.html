@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Employee Profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="Employee_Profile.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <script src="js/app.js"></script>
+  </head>
+  <body style:"background:whitesmoke;" ng-app="myApp" ng-controller="EmployeeFetchController"  >
+    <div class="card-panel">
+
+
+  <div class="col s2">
+              <img src="images/emp.jpg" alt="s" style:"width:50%;"> <!-- notice the "circle" class -->
+            </div>
+          <div class="txt">
+          <p>{{datam.firstname}}</p>
+          <p>{{datam.email}}</p>
+          <p>{{datam.contact}}</p>
+          <p>{{datam.Current_Position}}</p>
+          <p>{{datam.years_of_experience}}</p>
+        </div>
+      <a href="#!eedit"><button class="btn waves-effect waves-light black"  type="submit" name="action"><b>Edit Profile</b></button></a>&nbsp
+        &nbsp&nbsp&nbsp<a class="btn-floating btn-large waves-effect waves-light black" href="#!addskill"><i class="material-icons">add</i></a>
+  </div>
+  <div class="card2">
+
+  <div class="row">
+    <div class="col s12">
+      <ul class="tabs">
+        <li class="tab col s3"><a href="#test1"><b>Jobs Applied</b></a></li>
+      </ul>
+      <table>
+        <tr>
+          <td>Company</td>
+          <td>Designation</td>
+          <td>Date</td>
+          <td>Time</td>
+      </tr>
+      </table>
+      <a class="btn waves-effect waves-light black" href="#!home">Apply Job</a>
+
+
+
+    </div>
+    </div>
+
+
+</div>
+
+  </body>
+</html>

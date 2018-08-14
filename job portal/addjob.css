@@ -1,0 +1,70 @@
+.card-panel{
+  width:65%;
+  height: 80rem;
+  margin-left: 25%;
+  margin-top: 3%;
+  padding-left: 3%;
+}
+.input-field input:focus + label {
+   color: black !important;
+  font-size:100%;
+
+ }
+.input-field textarea:focus + label {
+   color: black !important;
+  font-size:100%;
+
+ }
+ /* label underline focus color */
+ .row .input-field input:focus {
+   border-bottom: 1px solid black !important;
+   box-shadow: 0 1px 0 0 black !important;
+}
+#body{
+  background: whitesmoke;
+}
+#hed{
+ font-size: 200%;
+  color:black;
+  margin-left:4%;
+}
+.row label{
+  padding-top: 
+}
+
+.btn{
+  color: white;
+  background-color: black;
+  margin-top: 4%;
+}
+#designation{
+  width: 180%;
+}
+
+#skills_required{
+  width: 180%;
+}
+
+#salary{
+  width: 180%;
+}
+
+#date{
+  width: 180%;
+}
+
+#time{
+  width: 180%;
+}
+#domain{
+   width: 180%;
+}
+#place{
+   width: 180%;
+}
+#description{
+   width: 180%;
+  height: 7rem;
+ 
+  
+}

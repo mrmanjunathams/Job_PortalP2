@@ -1,0 +1,95 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Merienda" rel="stylesheet">
+      <link rel="stylesheet" href="Register.css">
+      <!-- Compiled and minified CSS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+
+   <!-- Compiled and minified JavaScript -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+
+   <script src="js/app.js"></script>
+   <style>
+   input.ng-invalid.ng-dirty{border:1px solid red;}
+   </style>
+
+
+ </head>
+   <body ng-app="myApp">
+    <div class="card-panel" style="margin-left: 30%;" >
+
+
+    <div class="row"  >
+      <div id="sample">
+        <p id="heading"><b>REGISTER</b></p>
+   <form class="col s12" method="post" ng-controller="RegisterController" name="myForm" novalidate >
+
+     <div class="row">
+       <div class="input-field col s6">
+         <input id="email" type="email" class="validate" name="email" ng-model="email" style=" width: 170%;" required>
+         <label for="Email">Email</label>
+         <span style="color:red" ng-show="myForm.email.$dirty && myForm.email.$error.required">Required</span>
+ <span style="color:red" ng-show="myForm.email.$dirty && myForm.email.$error.email">Email is required.</span>
+       </div>
+     </div>
+
+  <div class="row">
+       <div class="input-field col s6">
+         <input id="password" type="password" class="validate" name="password" ng-model="password" style=" width: 170%;"  required ng-minlength="5" ng-maxlength="12" />
+         <label for="password">password</label>
+         <span style="color:red" ng-show="myForm.password.$dirty && myForm.password.$error.required">Required</span>
+          <span style="color:red" ng-show="myForm.password.$dirty && myForm.password.$error.minlength">too short</span>
+           <span style="color:red" ng-show="myForm.password.$dirty && myForm.password.$error.maxlength">too long</span>
+
+       </div>
+     </div>
+
+     <div class="row">
+	        <div class="input-field col s6">
+	          <input id="confirmpassword" type="password" class="validate" name="confirmpassword" required ng-model="confirmpassword"  style=" width: 170%;">
+	          <label for="confirmpassword">Confirm password</label>
+             <span  style="color:red" ng-show="myForm.confirmpassword.$dirty && myForm.confirmpassword.$error.required">required</span>
+            
+	        </div>
+     </div>
+
+     <div class="row">
+       <div class="input-field col s6">
+         <input id="question" type="text" class="validate" name="question" ng-model="question" required style=" width: 170%;">
+         <label for="question">What is your nick name?</label>
+          <span style="color:red" ng-show="myForm.question.$dirty && myForm.question.$error.required">Required</span>
+       </div>
+     </div>
+
+
+<div class="row4">
+
+  <label>Select Option</label>
+  <select class="browser-default" ng-model="value" required>
+    <option value="" disabled selected>Choose your option</option>
+    <option value="1">Employee</option>
+    <option value="2">Recuiter</option>
+  </select>
+  <span style="color:red" ng-show="myForm.value.$dirty && myForm.value.$error.required">Required</span>
+</div>
+
+
+
+
+
+      <div class="row3">
+      <div class="input-field col s14">
+      <input class="btn waves-effect waves-light black"  type="submit" ng-click="submit()" value="submit"  ng-disabled=" myForm.$invalid ">
+     <i class="material-icons right"></i>
+
+
+  </div>
+</form>
+</div>
+</div>
+</div>
+</body>
+</html>

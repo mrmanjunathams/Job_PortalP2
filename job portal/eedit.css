@@ -1,0 +1,68 @@
+body{
+  background-color: whitesmoke;
+}
+
+.card-panel{
+  width:45%;
+  height:auto;
+  background-color:white;
+  margin-right:12rem;
+ 
+}
+.input-field label{
+  font-size:1%;
+
+
+
+}
+.input-field input:focus + label {
+   color: black !important;
+  font-size:100%;
+
+
+ }
+.input-field textarea:focus + label {
+   color: black !important;
+  font-size:100%;
+
+
+ }
+ /* label underline focus color */
+ .row .input-field input:focus {
+   border-bottom: 1px solid black !important;
+   box-shadow: 0 1px 0 0 black !important;
+ }
+#hed{
+margin:0;
+  font-size:170%;
+}
+.col {
+ //font-size:25%;
+  margin-top:1rem;
+}
+label{
+  color: transparent;
+}
+#address{
+  height: auto;
+  
+}
+.row .input-field textarea:focus {
+   border-bottom: 1px solid black !important;
+   box-shadow: 1px 1px 1px 1px black !important;
+ }
+#filebtn{
+  width: 13%;
+  height: 7%;
+  background-color: white;
+  color:black;
+}
+#submit{
+  margin-left: 28%;
+  width:16%;
+}
+#male{
+  color: gray;
+  font-size: 100%;
+  
+}

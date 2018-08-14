@@ -1,0 +1,40 @@
+body{
+  background: whitesmoke;
+}
+.row3{
+  
+  padding-top: 4%;
+
+}
+
+.row4{
+width: 60%;
+
+}
+
+.input-field input:focus + label {
+   color: black !important;
+  font-size:100%;
+
+ }
+ /* label underline focus color */
+ .row .input-field input:focus {
+   border-bottom: 1px solid black !important;
+   box-shadow: 0 1px 0 0 black !important;
+ }
+.card-panel{
+  width: 35%;
+  
+  height: 35rem;
+ 
+  margin-left: 20%;
+  margin-top: 1%;
+}
+.row{
+  width: 130%;
+  
+}
+#heading{
+  font-size: 190%;
+  
+}

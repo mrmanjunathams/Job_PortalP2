@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Recruiter Profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="Recuiter_Profile.css">
+  </head>
+  <body id="body" ng-app="myApp" ng-controller="RecuiterFetchController" style="background:whitesmoke;">
+    <div class="card-panel" id="card1">
+    <div id="heading">
+    <p><b>PROFILE</b></p>
+    </div>
+          <div class="txt">
+          <p>{{datan.company_name}}</p>
+          <p>{{datan.Company_Website}}</p>
+          <p>{{datan.Company_Location}}</p>
+          <p>{{datan.contact}}</p>
+          <p>{{datan.name_of_ceo}}</p>
+          <p>{{datan.email}}</p>
+        </div>
+      <a href="#!redit" > <button class="btn waves-effect waves-light black"  type="submit" name="action" style="width:50%;"><b>Edit Profile</b></button></a>
+  </div>
+
+<div class="card-panel" id="card2">
+  <div class="row">
+    <div class="col s12">
+      <ul class="tabs">
+        <li class="tab col s3"><a href="#test1"><b>JOBS POSTED</b></a></li>
+      </ul>
+      <table>
+        <tr>
+          <td><b>Designation</b></td>
+          <td><b>skills Required</b></td>
+          <td><b>salary</></td>
+          <td><b>date</b></td>
+          <td><b>time</b></td>
+
+
+
+      </tr>
+
+	            <td>ful stack developer</td>
+	            <td>html,css,java,sql</td>
+	            <td>40000</td>
+	            <td>20-06-2018</td>
+          <td>20:15:25</td>
+      </table>
+      <a href="#!addjobs" ><button class="btn waves-effect waves-light black"  type="submit" name="action" style="width:20%;float:right;margin-top:30%;"><b>Add Jobs</b></button> </a>
+
+
+
+    </div>
+
+
+</div>
+</div>
+
+  </body>
+</html>

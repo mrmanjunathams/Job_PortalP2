@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/components/button.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Merienda" rel="stylesheet">
+      <link rel="stylesheet" href="eedit.css">
+      <!-- Compiled and minified CSS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+
+   <!-- Compiled and minified JavaScript -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+
+    <meta charset="utf-8">
+    <title>Edit Profile</title>
+  </head>
+  <body>
+
+    <div class="card-panel" style="margin-left:25rem;">
+
+
+    <div class="row">
+      <div id="sample">
+        <h5>EDIT PROFILE</h5>
+        <form class="col s12" method="post" ng-controller="EmployeeController">
+          <div class="row">
+            <div class="input-field col s6">
+          <input id="firstname" type="text" class="validate"  ng-model="firstname" required>
+          <label for="firstname" style="font-size:1rem;">First Name</label>
+              </div>
+            <div class="input-field col s6">
+              <input id="lastname" type="text" class="validate" ng-model="lastname" required>
+              <label for="lastname"  style="font-size:1rem;">Last Name</label>
+            </div>
+          </div>
+
+
+          <div class="row">
+           <div class="input-field col s12">
+          <input id="Current_Position" type="text" class="validate" ng-model="Current_Position" required>
+          <label for="Current_Position" style="font-size:1rem;">Current Position</label>
+         </div>
+        </div>
+        <div class="row">
+         <div class="input-field col s6">
+           <input id="years_of_experience" type="text" class="validate" ng-model="years_of_experience" required>
+           <label for="years_of_experience" style="font-size:1rem;">Years Of Experience</label>
+         </div>
+         <div class="input-field col s6">
+          <input id="contact" type="text" class="validate" ng-model="contact" required>
+          <label for="contact" style="font-size:1rem;">Contact</label>
+         </div>
+        </div>
+        <div class="row">
+           <div class="input-field col s12">
+              <textarea id="address" class="validate" ng-model="address" required></textarea>
+               <label for="address" style="font-size:1rem;">Address</label>
+           </div>
+            </div>
+            <div class="row">
+           <div class="input-field col s12">
+          <input  id="date" type="text" class="datepicker" ng-model="date" required>
+          <label for="DOB" style="font-size:1rem;">Select your DOB</label>
+          </div>
+            </div>
+
+            <div class="row">
+           <div class="input-field col s12">
+          <input  id="email" type="text" ng-model="email" required>
+          <label for="email" style="font-size:1rem;">Email</label>
+          </div>
+            </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+  <script>
+  const Calender=document.querySelector('.datepicker');
+  M.Datepicker.init(Calender,{
+  format:'dd/mmmm/yyyy',
+  showClearBtn:true,
+  i18n:{clear:'remove',
+  done:'Yes',
+  cancel:'No'
+  }
+  });
+
+  </script>
+            <div class="file-field input-field">
+           <div class="btn" id="filebtn">
+              <span>File</span>
+              <input type="file">
+            </div>
+            <div class="file-path-wrapper">
+              <input class="file-path validate" type="text">
+            </div>
+            </div>
+            <input class="btn waves-effect waves-light black"  type="submit" ng-click="submit()" value="submit">
+            &nbsp&nbsp&nbsp&nbsp&nbsp
+           <button class="btn waves-effect waves-light black" type="cancel" name="action">Cancle</button>
+      </form>
+
+
+  </div>
+</div>
+</div>
+</div>
+  </body>
+</html>

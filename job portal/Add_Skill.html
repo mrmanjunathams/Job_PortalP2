@@ -1,0 +1,58 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+
+<script src="js/app.js"></script>
+
+
+<link rel="stylesheet" href="addskill.css">
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $('select').material_select();
+  });
+
+</script>
+<body id="adds" ng-app="myApp">
+<div class="row">
+<div class="col-xs-offset-3 col-xs-6">
+  <div class="card-panel">
+    <form  method="post" ng-controller="SkillController">
+      <p><b>Add your Skills here..</b></p>
+      <div class="input-field col s12" id="technology" >
+        <select multiple ng-model="technology">
+        <option value="" disabled selected >Select the Technologies</option>
+        <option value="1">Java</option>
+        <option value="2">Nodejs</option>
+        <option value="3">Angularjs</option>
+        <option value="4">oracle</option>
+        <option value="5">html</option>
+        <option value="6">bootstrap</option>
+      </select>
+
+      <div class="row">
+         <div class="input-field col s6">
+       <input id="github_link" type="text" class="validate" ng-model="github_link" required>
+      <label for="github_link" style="font-size:1rem;">Github_Link</label>
+      </div>
+      </div>
+      <div class="row">
+         <div class="input-field col s6">
+       <input id="certificate" type="text" class="validate" ng-model="certificate" required>
+      <label for="certificate" style="font-size:1rem;">Certification_course</label>
+    </div>
+      </div>
+      </div>
+      <input class="btn waves-effect waves-light black"  type="submit" ng-click="submit1()" value="DONE">
+      <i class="material-icons right">create</i>
+
+    </form>
+  </div>
+  </div>
+</div>
+</body>

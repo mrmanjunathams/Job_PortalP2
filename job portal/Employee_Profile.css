@@ -1,0 +1,46 @@
+.card-panel{
+  margin-left:7rem;
+  width:25%;
+  height:32rem;
+  margin-top:2rem;
+
+}
+.card-panel img {
+  width:350%;
+  margin-left:-2rem;
+  
+}
+.txt{
+  margin-top:7rem;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+button{
+  width:70%;
+  margin-top:2rem;
+}
+.card2{
+  background:white;
+  margin-left:35rem;
+  width:55%;
+  margin-top:-33rem;
+  height:30rem;
+
+}
+.tabs{
+  width:100%;
+  margin:0;
+  background:black;
+  margin-top:-1.9rem;
+}
+.btn-floating{
+  margin-bottom:-2rem;
+}
+.card2 .btn{
+  margin-top:20rem;
+  width:25%;
+  float:right;
+
+}
+body{
+  background:whitesmoke;
+}
